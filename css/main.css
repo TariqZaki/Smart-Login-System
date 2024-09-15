@@ -1,0 +1,196 @@
+/*!<--- global style ---->*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body
+{
+  font-family: "Rowdies", sans-serif;
+}
+/*!<--- global style ---->*/
+
+#home {
+  background-image: url(../images/beautiful-mountains-landscape\ \(1\).jpg);
+  background-size: cover;
+  background-position: center center;
+
+}
+.sign:hover
+{
+  transform: translateX();
+}
+#login {
+  width: 35%;
+  height: 80%;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 0.5px solid #fff;
+  top: 15%;
+  left: 30%;
+}
+
+#login .shape,
+#welcome .shape {
+  width: 150px;
+  height: 150px;
+  background-color: #914F1E;
+  top: -15%;
+  transition: all 0.5s ease-in-out;
+}
+#login .shape:hover,
+#welcome .shape:hover {
+  position: absolute;
+  top: -100px;
+  box-shadow: 2px 4px 4px #32231e;
+}
+
+#login .shape i,
+#welcome .shape i {
+  top: 25%;
+  left: 28%;
+  font-size: 75px;
+}
+.box-filed {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fff;
+  padding-inline: 20px 50px;
+  outline: none;
+}
+
+.form-floating>label{
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  color: #fff;
+  border-radius: 15px;
+  cursor: text;
+  padding: 0px 5px !important ;
+  width: fit-content !important;
+  height: fit-content !important;
+  transition: all 1s ease-in-out;
+}
+
+#show-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-control:focus ~ label,
+.form-control:not(:placeholder-shown).form-control:not(:focus) ~ label
+ {
+
+  width: fit-content;
+  top: -5px;
+  left: 20px;
+  background-color: #fff;
+  color: #000;
+}
+.form-control:focus{
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+#welcome {
+  width: 30%;
+  height: 50%;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 0.5px solid #fff;
+  top: 30%;
+  left: 35%;
+}
+
+button {
+  width: 100%;
+}
+
+/*!<--- media query ---->*/
+@media (max-width: 1200px) {
+  .form-control {
+    width: 100%;
+    height: 30%;
+  }
+  #login {
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 0.5px solid #fff;
+    top: 15%;
+    left: 0%;
+  }
+  #login .shape {
+    width: 150px;
+    height: 150px;
+    background-color: #914F1E;
+    top: -15%;
+  }
+  button {
+    width: 100%;
+    height: 60px;
+  }
+}
+@media(max-width:992px)
+{
+  #welcome {
+    width: 70%;
+    height: 50%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 0.5px solid #fff;
+    top: 30%;
+    left: 15%;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    width: 100%;
+  }
+  #login {
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 0.5px solid #fff;
+    top: 15%;
+    left: 0%;
+  }
+  #login .shape {
+    width: 150px;
+    height: 150px;
+    background-color: #914F1E;
+    top: -18%;
+  }
+
+}
+@media (max-width:576px)
+{
+  #welcome {
+    width: 70%;
+    height: 50%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 0.5px solid #fff;
+    top: 30%;
+    left: 15%;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
+/*!<--- media query ---->*/
